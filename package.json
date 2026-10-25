@@ -5,10 +5,14 @@
   "type": "module",
   "scripts": {
     "fmt": "oxfmt",
-    "fmt:check": "oxfmt --check"
+    "fmt:check": "oxfmt --check",
+    "new-post": "node --experimental-strip-types scripts/new-post.ts",
+    "typecheck": "tsc --noEmit"
   },
   "devDependencies": {
-    "oxfmt": "^0.72.0"
+    "@types/node": "^26.6.5",
+    "oxfmt": "^0.72.0",
+    "typescript": "^7.0.2"
   },
   "engines": {
     "node": ">=22.13.0"
